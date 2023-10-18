@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+const baseURL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:5001" // Use localhost for development
+    : "https://llwassim.github.io/bankingapp-frontend"; // Use the production URL for deployment
+
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5001", // Change to your server's URL
+  baseURL,
+  timeout: 5000,
 });
 
 function SignUpPage() {
