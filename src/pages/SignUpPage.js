@@ -3,7 +3,7 @@ import axios from "axios";
 const baseURL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:5001" // Use localhost for development
-    : "http://18.219.79.87:5001"; // Use the production URL for deployment {AWS SERVER}
+    : "https://18.219.79.87:5001"; // Use the production URL for deployment {AWS SERVER}
 
 const axiosInstance = axios.create({
   baseURL,
