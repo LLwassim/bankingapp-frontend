@@ -9,9 +9,10 @@ function App() {
   return (
     <Router basename="/bankingapp-frontend">
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/" element={<LoginPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </Router>
   );

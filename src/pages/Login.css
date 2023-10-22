@@ -14,10 +14,14 @@ h2 {
   margin: 0 0 20px;
   font-size: 40px;
 }
-
+.login-message {
+  color: red;
+  font-size: 24px;
+}
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
 label {
@@ -31,11 +35,22 @@ input {
   border-radius: 5px;
   width: 100%;
 }
-
-button {
+.signup-button {
   background-color: #007bff;
   color: #fff;
   padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
