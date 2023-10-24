@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { makeStyles, ThemeProvider } from "@mui/styles";
 import { Container, Typography, TextField, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
@@ -58,7 +58,7 @@ function SignUpPage() {
     contact_number: "",
     address: "",
   });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -80,6 +80,7 @@ function SignUpPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    navigate("/home");
     sendFormData();
   };
 
